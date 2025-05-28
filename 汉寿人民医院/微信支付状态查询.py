@@ -13,14 +13,14 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # 微信支付配置
-CERT_PATH = 'F:/python charm/项目文档/1636942942_20241205_cert/apiclient_cert.pem'
-KEY_PATH = 'F:/python charm/项目文档/1636942942_20241205_cert/apiclient_key.pem'
+CERT_PATH = '/1636942942_20241205_cert/apiclient_cert.pem'
+KEY_PATH = '/1636942942_20241205_cert/apiclient_key.pem'
 APPID = 'wx4f77606f6d58827b'
 MCH_ID = '1636942942'
 API_KEY = '1217752501201407033233368018'
 NOTIFY_URL = 'https://www.weixin.qq.com/wxpay/pay.php'
 SERIAL_NO = '2A94B31303735A73C1FE696B6B4B2E431BDE3D39'  # 从微信支付商户平台获取
-PRIVATE_KEY_PATH = 'F:/python charm/项目文档/1636942942_20241205_cert/apiclient_key.pem'
+PRIVATE_KEY_PATH = '/1636942942_20241205_cert/apiclient_key.pem'
 
 def load_private_key(path):
     with open(path, "rb") as key_file:
